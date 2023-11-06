@@ -1,0 +1,35 @@
+<div class="col-fixed">
+     <home-sidebar [isVisible]="isVisible" />
+
+     <div class="">
+          <div class="w-full flex justify-content-between align-items-center">
+               <div class="">
+                    <p-button
+                         (click)="handleToggleMenu()"
+                         icon="pi pi-bars"
+                         styleClass="text-white "
+                    >
+                    </p-button>
+               </div>
+
+               <!-- <div class="">
+        <div class="">
+          <app-profile-sign
+            [name]="user.name"
+            [lastname]="user.lastname"
+            [email]="user.email"
+            [role]="user.role"
+            [padding]="15"
+            [picture]="user.picture"
+          />
+        </div>
+      </div> -->
+          </div>
+     </div>
+
+     <div class="grid mx-2">
+          <div class="col-12 md:col-12">
+               <router-outlet></router-outlet>
+          </div>
+     </div>
+</div>

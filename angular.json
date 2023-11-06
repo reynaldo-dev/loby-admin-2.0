@@ -21,7 +21,7 @@
                               "assets": ["src/favicon.ico", "src/assets"],
                               "styles": [
                                    "src/styles.css",
-                                   "node_modules/primeng/resources/themes/vela-blue/theme.css",
+                                   "node_modules/primeng/resources/themes/saga-orange/theme.css",
                                    "node_modules/primeng/resources/primeng.min.css",
                                    "node_modules/primeflex/primeflex.css"
                               ],
@@ -49,13 +49,7 @@
                                    "vendorChunk": true,
                                    "extractLicenses": false,
                                    "sourceMap": true,
-                                   "namedChunks": true,
-                                   "fileReplacements": [
-                                        {
-                                             "replace": "src/environments/environment.ts",
-                                             "with": "src/environments/environment.development.ts"
-                                        }
-                                   ]
+                                   "namedChunks": true
                               }
                          },
                          "defaultConfiguration": "production"
