@@ -1,0 +1,21 @@
+<div
+     class="high__light__bg border-round-lg flex md:justify-content-center justify-content-around align-items-center"
+     routerLink="/dashboard/eventos"
+>
+     <div
+          class="p-3 border-round-xl flex justify-content-center align-items-center"
+          [ngStyle]="{ 'background-color': color }"
+     >
+          <i
+               class="pi pi-calendar"
+               style="font-size: 2rem"
+               [ngStyle]="{ color: iconColor }"
+          ></i>
+     </div>
+     <div
+          class="m-2 flex gap-2 flex-column justify-content-center align-items-center"
+     >
+          <span class="font-bold text-xl text-color-secondary">{{ data }}</span>
+          <p class="text-color-secondary text-center">{{ title }}</p>
+     </div>
+</div>

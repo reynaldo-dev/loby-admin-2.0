@@ -1,0 +1,11 @@
+<p-carousel
+     [value]="communities"
+     [numVisible]="numVisible"
+     [numScroll]="numScroll"
+     [showIndicators]="false"
+     styleClass=""
+>
+     <ng-template let-community pTemplate="item">
+          <communities-community-card [community]="community" />
+     </ng-template>
+</p-carousel>

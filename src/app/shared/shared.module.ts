@@ -1,12 +1,11 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LayoutComponent } from './components/layout/layout.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { AdminRoutingModule } from '../dashboard/admin/admin-routing.module';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
-     declarations: [LayoutComponent, SidebarComponent],
+     declarations: [LoaderComponent],
      imports: [CommonModule, RouterModule],
+     exports: [LoaderComponent],
 })
 export class SharedModule {}

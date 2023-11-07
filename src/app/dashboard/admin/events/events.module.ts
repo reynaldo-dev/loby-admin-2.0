@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { EventsRoutingModule } from './events-routing.module';
-
+import { EventCardComponent } from './components/event-card/event-card.component';
+import { RouterModule } from '@angular/router';
+import { PrimengModule } from 'src/app/primeng/primeng.module';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    EventsRoutingModule
-  ]
+     declarations: [EventCardComponent],
+     imports: [CommonModule, RouterModule, PrimengModule],
+     exports: [EventCardComponent],
 })
-export class EventsModule { }
+export class EventsModule {}

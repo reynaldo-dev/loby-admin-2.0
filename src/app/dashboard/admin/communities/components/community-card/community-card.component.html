@@ -1,0 +1,23 @@
+<div
+     class="border-round-lg cursor-pointer flex flex-column gap-3 p-1 mx-1 px-2 py-3"
+     *ngIf="community"
+     [style]="{
+          'background-color': community.color
+     }"
+>
+     <a
+          [routerLink]="['/dashboard/comunidad', community.id]"
+          style="color: inherit; text-decoration: none"
+          class="border-none"
+     >
+          <div class="flex justify-content-between">
+               <span class="text-xl text-white">{{ community.name }}</span>
+               <p-chip>
+                    <div class="py-1">
+                         {{ community.users.length }}
+                         <i class="pi pi-users"></i>
+                    </div>
+               </p-chip>
+          </div>
+     </a>
+</div>
